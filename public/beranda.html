@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="../src/img/logo.png">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="../src/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body class="bg-kbsb-dark block m-0 p-0">
+    <!-- Navbar -->
+    <header class="py-2 lg:py-0 px-5 md:px-10 lg:px-40 absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex justify-between items-center w-full relative">
+                <div class="hover:cursor-pointer">
+                    <img src="../src/img/logo.png" alt="" class="w-14">
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button id="hamburger" name="hamburger" type="button">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                </div>
+                <nav id="kbsb-menu" class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full absolute py-5 bg-kbsb-secondary shadow-lg lg:shadow-none rounded-sm lg:rounded-none w-3/4 md:w-1/2 lg:w-auto -right-5 md:-right-10 top-full h-screen lg:h-fit">
+                    <ul class="block lg:flex">
+                        <li class="group"><a href="./beranda.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">BERANDA</a></li>
+                        <li class="group">
+                            <div id="kbsb" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow cursor-pointer">KBSB</div>
+                            <div id="kbsb-part" class="hidden lg:absolute p-2 lg:p-5 mx-8 lg:mx-0 bg-transparent lg:bg-kbsb-secondary lg:shadow-lg rounded-sm">
+                                <ul class="flex flex-col gap-2">
+                                    <li><a href="./jurai-jurai.html" class="text-kbsb-white hover:text-kbsb-yellow text-sm">Jurai-jurai Berbasis Kabupaten & Kota</a></li>
+                                    <li><a href="./kabupaten-kota.html" class="text-kbsb-white hover:text-kbsb-yellow text-sm">KBSB Kabupaten & Kota</a></li>
+                                    <li><a href="./otonom.html" class="text-kbsb-white hover:text-kbsb-yellow text-sm">Organisasi Otonom</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="group"><a href="./tentang.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">TENTANG</a></li>
+                        <!-- <li class="group"><a href="" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">KEGIATAN</a></li> -->
+                        <li class="group"><a href="./berita.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">BERITA</a></li>
+                        <li class="group"><a href="./galery.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">GALERY</a></li>
+                        <li class="group"><a href="./kontak.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">KONTAK</a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="relative overflow-hidden mb-20 lg:mb-28">
+        <img src="../src/img/hero.jpg" alt="Avatar" class="object-cover w-auto md:w-full h-60 md:h-full" />
+        <div class="absolute m-auto md:m-0 w-full md:w-2/3 px-5 md:px-10 lg:px-40 bottom-20 md:bottom-16 lg:bottom-32 inset-x-0 leading-4">
+            <h5 class="text-kbsb-yellow text-center md:text-left text-sm md:text-lg lg:text-xl font-bold">SELAMAT DATANG DI</h5>
+            <h1 class="text-kbsb-white text-center md:text-left text-2xl md:text-4xl lg:text-5xl font-bold">Keluarga Besar Sumatera Barat Provinsi Lampung</h1>
+        </div>
+    </div>
+
+    <!-- kbsb section -->
+    <!-- <div class="mx-5 md:mx-10 lg:mx-40 my-16 lg:my-32 flex flex-col md:flex-row justify-between gap-5 lg:gap-8">
+
+        <div class="p-5 lg:p-10 bg-kbsb-secondary flex-1 flex flex-col justify-between">
+            <div class="mb-10">
+                <h1 class="text-kbsb-white text-xl lg:text-2xl font-bold">Jurai-jurai Berbasis Kabupaten dan Kota</h1>
+                <div class="bg-kbsb-yellow w-1/2 h-1 mt-4 mb-5 lg:mb-10"></div>
+                <p class="text-kbsb-white text-md hidden lg:block">Jurai adalah organisasi yang dibentuk oleh warga Lampung asal Sumatera Barat yang berasal
+                    dari satu Kabupaten, Kecamatan atau Nagari di Sumatera Barat
+                </p>
+            </div>
+            <div class="">
+                <a href="./jurai-jurai.html" class="px-6 py-1 text-xs font-semibold border-2 border-kbsb-yellow text-kbsb-yellow">DETAIL</a>
+            </div>
+        </div>
+
+        <div class="p-5 lg:p-10 bg-kbsb-secondary flex-1 flex flex-col justify-between">
+            <div class="mb-10">
+                <h1 class="text-kbsb-white text-xl lg:text-2xl font-bold">KBSB Kabupaten dan Kota</h1>
+                <div class="bg-kbsb-yellow w-1/2 h-1 mt-4 mb-5 lg:mb-10"></div>
+                <p class="text-kbsb-white text-md hidden lg:block">KBSB Kabupaten/Kota adalah institusi pimpinan organisasi tertinggi di tingkat
+                    Kabupaten/Kota yang membawahi KBSB Komisariat dan berfungsi mengendalikan roda
+                    organisasi secara internal dan eksternal
+                </p>
+            </div>
+            <div>
+                <a href="./kabupaten-kota.html" class="px-6 py-1 text-xs font-semibold border-2 border-kbsb-yellow text-kbsb-yellow">DETAIL</a>
+            </div>
+        </div>
+
+        <div class="p-5 lg:p-10 bg-kbsb-secondary flex-1 flex flex-col justify-between">
+            <div class="mb-10">
+                <h1 class="text-kbsb-white text-xl lg:text-2xl font-bold">Organisasi Otonom</h1>
+                <div class="bg-kbsb-yellow w-1/2 h-1 mt-4 mb-5 lg:mb-10"></div>
+                <p class="text-kbsb-white text-md hidden lg:block">Organisasi Otonom adalah organisasi yang dibentuk oleh masyarakat Lampung asal
+                    Sumatera Barat berdasarkan kesamaan tertentu seperti profesi, hobi, almamater, dan lain-lain
+                    yang kegiatannya tidak bertentangan dengan tujuan KBSB
+                </p>
+            </div>
+            <div>
+                <a href="./otonom.html" class="px-6 py-1 text-xs font-semibold border-2 border-kbsb-yellow text-kbsb-yellow">DETAIL</a>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="mx-5 md:mx-10 lg:mx-40 mb-20 lg:mb-32 flex flex-col md:flex-row justify-between gap-5 lg:gap-8">
+        <div class="p-5 lg:p-8 bg-kbsb-secondary flex-1 flex justify-center gap-10">
+            <div class="text-center">
+                <h1 class="text-3xl lg:text-5xl text-kbsb-yellow font-bold mb-5">25</h1>
+                <p class="text-kbsb-white font-medium text-xs lg:text-base">ORGANISASI</p>
+            </div>
+        </div>
+
+        <div class="p-5 lg:p-8 bg-kbsb-secondary flex-1 flex justify-center gap-10">
+            
+            <div class="text-center">
+                <h1 class="text-3xl lg:text-5xl text-kbsb-yellow font-bold mb-5">1 jt</h1>
+                <p class="text-kbsb-white font-medium text-xs lg:text-base">ANGGOTA</p>
+            </div>
+        </div>
+
+        <div class="p-5 lg:p-8 bg-kbsb-secondary flex-1 flex justify-center gap-10">
+            
+            <div class="text-center">
+                <h1 class="text-3xl lg:text-5xl text-kbsb-yellow font-bold mb-5">50</h1>
+                <p class="text-kbsb-white font-medium text-xs lg:text-base">TAHUN</p>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Tentang section -->
+    <div class="mx-5 md:mx-10 lg:mx-40 mb-20 lg:mb-32 flex flex-col md:flex-row justify-between gap-4 lg:gap-8">
+        <div class="flex-1 bg-cover bg-center">
+            <img src="../src/img/about.png" alt="" class="object-cover h-full">
+        </div>
+        <div class="flex-1">
+            <h5 class="text-md text-kbsb-yellow font-semibold mb-1">TENTANG KBSB</h5>
+            <h1 class="text-3xl lg:text-4xl text-kbsb-white font-bold mb-6 md:mb-10 tracking-wide leading-normal lg:leading-relaxed">Kami adalah perantau Minang yang ada di Lampung</h1>
+            <p class="text-kbsb-white mb-10 leading-relaxed">KBSB merupakan organisasi tertinggi yang dibuat sebagai wadah tempat berkumpulnya
+                warga Lampung asal Sumatera Barat, serta orang-orang yang mempunyai hubungan
+                perkawinan, hubungan darah dengan orang keturunan dari Sumatera Barat. Tidak ada satupun organisasi lain di Provinsi Lampung yang mengatas
+                namakan “Minang” dan “Sumatera Barat” lebih tinggi dari orgaanisasi KBSB.
+            </p>
+            <a href="./tentang.html" class="px-4 py-2 bg-kbsb-yellow text-kbsb-dark font-semibold">Pelajari Lebih Lanjut</a>
+        </div>
+    </div>
+
+    <!-- Kegitan Section -->
+    <!-- <div class="px-40 mb-32 lg:flex flex-col items-center w-full hidden">
+        <div class="w-3/4 text-center">
+            <h5 class="text-md text-kbsb-yellow font-semibold mb-2">KEGIATAN</h5>
+            <h1 class="text-3xl text-kbsb-white font-bold mb-7 tracking-wide leading-relaxed">Apa saja kegatan yang kami lakukakan ?</h1>
+            <p class="text-kbsb-white mb-10 px-20 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+        </div>
+        <div class="flex justify-between w-full gap-8">
+            <div class="bg-kbsb-white flex-1">1</div>
+            <div class="bg-kbsb-white flex-1">2</div>
+            <div class="bg-kbsb-white flex-1">3</div>
+        </div>
+    </div> -->
+
+    <!-- Berita section -->
+    <div class="mx-5 md:mx-10 lg:mx-40 mb-20 lg:mb-32 flex flex-col items-center">
+        <div class="md:w-3/4 text-center mb-5">
+            <h5 class="text-md text-kbsb-yellow font-semibold mb-2">BERITA</h5>
+            <h1 class="text-3xl lg:text-4xl text-kbsb-white font-bold mb-7 tracking-wide leading-normal md:leading-relaxed">Cek Berita Terbaru KBSB</h1>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between gap-4 lg:gap-8">
+            <div class="flex-1">
+                <div class="w-full mb-2 ">
+                    <img src="../src/img/about.png" alt="" class="object-cover">
+                </div>
+                <h1 class="text-kbsb-white text-lg font-bold mb-4">KBSB Lampung mengadakan lomba tari piring se-indonesia</h1>
+                <p class="text-kbsb-white mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <div>
+                    <a href="" class="px-6 py-2 text-xs font-semibold border-2 border-kbsb-yellow text-kbsb-yellow">BACA SELENGKAPNYA</a>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="w-full mb-2 ">
+                    <img src="../src/img/about.png" alt="" class="object-cover">
+                </div>
+                <h1 class="text-kbsb-white text-lg font-bold mb-4">KBSB Lampung mengadakan lomba tari piring se-indonesia</h1>
+                <p class="text-kbsb-white mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <div>
+                    <a href="" class="px-6 py-2 text-xs font-semibold border-2 border-kbsb-yellow text-kbsb-yellow">BACA SELENGKAPNYA</a>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="w-full mb-2 ">
+                    <img src="../src/img/about.png" alt="" class="object-cover">
+                </div>
+                <h1 class="text-kbsb-white text-lg font-bold mb-4">KBSB Lampung mengadakan lomba tari piring se-indonesia</h1>
+                <p class="text-kbsb-white mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <div>
+                    <a href="" class="px-6 py-2 text-xs font-semibold border-2 border-kbsb-yellow text-kbsb-yellow">BACA SELENGKAPNYA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galery section -->
+    <div class="mb-32 px-40 lg:flex flex-col items-center w-full hidden">
+        <div class="w-3/4 text-center">
+            <h5 class="text-md text-kbsb-yellow font-semibold mb-2">GALERY</h5>
+            <h1 class="text-3xl text-kbsb-white font-bold mb-7 tracking-wide">Semua Kenangan Tersimpan Disini</h1>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+            <div class="bg-kbsb-white p-4 max-h-[300px]">
+                <div class="overflow-hidden max-w-full max-h-full">
+                    <img src="../src/img/img1.jpg" alt="" class="object-cover">
+                </div>
+            </div>
+            <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                <div class="overflow-hidden max-w-full max-h-full">
+                    <img src="../src/img/img2.jpg" alt="" class="object-cover">
+                </div>
+            </div>
+            <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                <div class="overflow-hidden max-w-full max-h-full">
+                    <img src="../src/img/img3.jpg" alt="" class="object-cover">
+                </div>
+            </div>
+            <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                <div class="overflow-hidden max-w-full max-h-full">
+                    <img src="../src/img/img4.jpg" alt="" class="object-cover">
+                </div>
+            </div>
+            <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                <div class="overflow-hidden max-w-full max-h-full">
+                    <img src="../src/img/img5.jpg" alt="" class="object-cover">
+                </div>
+            </div>
+            <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                <div class="overflow-hidden max-w-full max-h-full">
+                    <img src="../src/img/img6.jpg" alt="" class="object-cover">
+                </div>
+            </div>
+            
+        </div>
+        <a href="" class="px-4 py-2 bg-kbsb-yellow text-kbsb-dark font-semibold">Lihat Lebih Banyak</a>
+    </div>
+    
+    <div class="px-5 md:px-20 lg:px-40 py-10 md:py-20 bg-kbsb-secondary">
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-5 md:gap-10">
+            <div class="flex-2 order-2 lg:order-1">
+                <h1 class="text-kbsb-white font-bold text-xl md:text-3xl text-center lg:text-left lg:text-4xl mb-5 md:mb-10 leading-relaxed">“Anak ikan dimakan ikan, gadang ditabek anak tenggiri. Ameh bukan perakpun bukan, budi saketek rang haragoi”</h1>
+                <div class="flex items-center justify-center lg:justify-start">
+                    <div class="bg-kbsb-yellow w-1/3 h-1 mr-5 hidden lg:block"></div>
+                    <h1 class="text-kbsb-yellow text-md md:text-xl font-bold">Seprian Dani</h1>
+                </div>
+            </div>
+            <img src="../src/img/gelery1.jpg" alt="" class="flex-1 order-1 lg:order-2 rounded-full w-40 lg:w-60">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-kbsb-footer">
+        <div class="px-5 md:px-10 lg:px-40 py-10 md:py-20 flex flex-col md:flex-row gap-10">
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-40 h-40">
+                    <img src="../src/img/logo.png" alt="" class="cursor-pointer">
+                </div>
+                <div class="flex gap-10 mt-5">
+                    <a href=""><i class="fa-brands fa-instagram text-kbsb-yellow text-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f text-kbsb-yellow text-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter text-kbsb-yellow text-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube text-kbsb-yellow text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="flex-1 md:flex flex-col items-center hidden">
+                <h1 class="text-kbsb-white text-xl font-bold mb-2">Tautan</h1>
+                <ul class="">
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Beranda</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">KBSB</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Tentang</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Kegiatan</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Berita</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Galery</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="flex-1">
+                <img src="../src/img/map.png" alt="" class="mb-2">
+                <p class="text-kbsb-white text-md font-semibold mb-2">Jl. Tirtaria No.18 Kel.Way Kandis, Kec. Tanjung Senang, Bandar Lampung 35141</p>
+                <div class="flex items-center">
+                    <i class="fa-brands fa-whatsapp text-kbsb-white text-xl mr-2"></i>
+                    <p class="text-kbsb-white mr-2">+6285345242234</p>
+                    <i class="fa-solid fa-envelope text-kbsb-white text-xl mr-2"></i>
+                    <p class="text-kbsb-white">admin@kbsb.or.id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/kbsb-scripts.js"></script>
+</body>
+</html>

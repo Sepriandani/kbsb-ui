@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang KBSB</title>
+    <link rel="icon" type="image/png" href="../src/img/logo.png">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="../src/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body class="bg-kbsb-dark block m-0 p-0">
+    <!-- Navbar -->
+    <header class="py-2 lg:py-0 px-5 md:px-10 lg:px-40 absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex justify-between items-center relative">
+                <div class="hover:cursor-pointer">
+                    <img src="../src/img/logo.png" alt="" class="w-14">
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button id="hamburger" name="hamburger" type="button">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                </div>
+                <nav id="kbsb-menu" class="hidden lg:block lg:static lg:bg-transparent lg:max-w-full absolute py-5 bg-kbsb-secondary shadow-lg lg:shadow-none rounded-md lg:rounded-none max-w-[250px] right-4 top-full">
+                    <ul class="block lg:flex">
+                        <li class="group"><a href="./beranda.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">BERANDA</a></li>
+                        <li class="group"><a href="" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">KBSB</a></li>
+                        <li class="group"><a href="./tentang.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">TENTANG</a></li>
+                        <!-- <li class="group"><a href="" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">KEGIATAN</a></li> -->
+                        <li class="group"><a href="./berita.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">BERITA</a></li>
+                        <li class="group"><a href="" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">GALERY</a></li>
+                        <li class="group"><a href="./kontak.html" class="text-base text-kbsb-white py-2 mx-8 flex group-hover:text-kbsb-yellow">KONTAK</a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="img-full" class="hidden fixed p-10 lg:p-20 top-0 bottom-0 w-screen h-screen">
+        <div class="flex items-center float-right">
+            <button id="close-img" type="button">
+                <span class="w-[30px] h-[2px] my-2 block bg-kbsb-white rotate-45 origin-top-left"></span>
+                <span class="w-[30px] h-[2px] my-2 block bg-kbsb-white invisible"></span>
+                <span class="w-[30px] h-[2px] my-2 block bg-kbsb-white -rotate-45 origin-bottom-left"></span>
+            </button>
+        </div>
+        <img src="../src/img/img1.jpg" alt="" class="max-h-full max-w-full m-auto">
+    </div>
+
+    <div class="mx-5 md:mx-10 lg:mx-40 my-20 lg:my-32">
+        <div class="text-center mb-24">
+            <h5 class="text-md text-kbsb-yellow font-semibold mb-2">GALERY</h5>
+            <h1 class="text-3xl text-kbsb-white font-bold mb-7 tracking-wide leading-relaxed">Lihat Kenangan Keluarga Besar Sumatera Barat</h1>
+        </div>
+        <div>
+            <div class="flex items-center gap-3 mb-8">
+                <div class="bg-kbsb-yellow w-[60px] h-[2px]"></div>
+                <h1 class="text-kbsb-white text-base font-semibold">Musyawarah Provinsi</h1>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <button type="button" id="img-1"  class="bg-kbsb-white p-4 max-h-[300px]">
+                    <div class="overflow-hidden max-w-full max-h-full">
+                        <img src="../src/img/img1.jpg" alt="" class="object-cover">
+                    </div>
+                </button>
+                <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                    <div class="overflow-hidden max-w-full max-h-full">
+                        <img src="../src/img/img2.jpg" alt="" class="object-cover">
+                    </div>
+                </div>
+                <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                    <div class="overflow-hidden max-w-full max-h-full">
+                        <img src="../src/img/img3.jpg" alt="" class="object-cover">
+                    </div>
+                </div>
+                <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                    <div class="overflow-hidden max-w-full max-h-full">
+                        <img src="../src/img/img4.jpg" alt="" class="object-cover">
+                    </div>
+                </div>
+                <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                    <div class="overflow-hidden max-w-full max-h-full">
+                        <img src="../src/img/img5.jpg" alt="" class="object-cover">
+                    </div>
+                </div>
+                <div class="bg-kbsb-white p-4 max-h-[300px] flex items-center">
+                    <div class="overflow-hidden max-w-full max-h-full">
+                        <img src="../src/img/img6.jpg" alt="" class="object-cover">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-kbsb-footer">
+        <div class="px-5 md:px-10 lg:px-40 py-10 md:py-20 flex flex-col md:flex-row gap-10">
+            <div class="flex-1 flex flex-col items-center">
+                <div class="w-40 h-40">
+                    <img src="../src/img/logo.png" alt="" class="cursor-pointer">
+                </div>
+                <div class="flex gap-10 mt-5">
+                    <a href=""><i class="fa-brands fa-instagram text-kbsb-yellow text-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f text-kbsb-yellow text-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter text-kbsb-yellow text-2xl"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube text-kbsb-yellow text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="flex-1 md:flex flex-col items-center hidden">
+                <h1 class="text-kbsb-white text-xl font-bold mb-2">Tautan</h1>
+                <ul class="">
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Beranda</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">KBSB</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Tentang</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Kegiatan</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Berita</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Galery</a></li>
+                    <li class="text-kbsb-white text-md font-semibold mb-2"><a href="">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="flex-1">
+                <img src="../src/img/map.png" alt="" class="mb-2">
+                <p class="text-kbsb-white text-md font-semibold mb-2">Jl. Tirtaria No.18 Kel.Way Kandis, Kec. Tanjung Senang, Bandar Lampung 35141</p>
+                <div class="flex items-center">
+                    <i class="fa-brands fa-whatsapp text-kbsb-white text-xl mr-2"></i>
+                    <p class="text-kbsb-white mr-2">+6285345242234</p>
+                    <i class="fa-solid fa-envelope text-kbsb-white text-xl mr-2"></i>
+                    <p class="text-kbsb-white">admin@kbsb.or.id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/kbsb-scripts.js"></script>
+</body>
+</html>
